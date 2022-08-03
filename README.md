@@ -1,1 +1,1 @@
-# petStoreRepository
+To make sure that everything goes ok, for the exploratory test you need to have installed Postman tool and run this Json file, also you need to configurate a global or collection variable that contains the API base url (https://petstore.swagger.io/v2/swagger.json).
