@@ -1,0 +1,128 @@
+14:30:57.044 request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 129
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_333)
+{"id":5,"category":{"id":25,"name":"DOG"},"name":"Rocc","photoUrls":["string"],"tags":[{"id":0,"name":"pet"}],"status":"pending"}
+
+14:30:57.641 response time in milliseconds: 595,75
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 19:30:54 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"id":5,"category":{"id":25,"name":"DOG"},"name":"Rocc","photoUrls":["string"],"tags":[{"id":0,"name":"pet"}],"status":"pending"}
+
+14:30:57.673 request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 129
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_333)
+{"id":5,"category":{"id":25,"name":"DOG"},"name":"Rocc","photoUrls":["string"],"tags":[{"id":0,"name":"pet"}],"status":"pending"}
+
+14:30:58.072 response time in milliseconds: 398,15
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 19:30:54 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"id":5,"category":{"id":25,"name":"DOG"},"name":"Rocc","photoUrls":["string"],"tags":[{"id":0,"name":"pet"}],"status":"pending"}
+
+14:30:58.090 request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 129
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_333)
+{"id":5,"category":{"id":25,"name":"DOG"},"name":"Rocc","photoUrls":["string"],"tags":[{"id":0,"name":"pet"}],"status":"pending"}
+
+14:30:58.472 response time in milliseconds: 381,58
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 19:30:55 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"id":5,"category":{"id":25,"name":"DOG"},"name":"Rocc","photoUrls":["string"],"tags":[{"id":0,"name":"pet"}],"status":"pending"}
+
+14:30:58.489 request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 129
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_333)
+{"id":5,"category":{"id":25,"name":"DOG"},"name":"Rocc","photoUrls":["string"],"tags":[{"id":0,"name":"pet"}],"status":"pending"}
+
+14:30:58.878 response time in milliseconds: 387,34
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 19:30:55 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"id":5,"category":{"id":25,"name":"DOG"},"name":"Rocc","photoUrls":["string"],"tags":[{"id":0,"name":"pet"}],"status":"pending"}
+
+14:30:58.895 request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 129
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_333)
+{"id":5,"category":{"id":25,"name":"DOG"},"name":"Rocc","photoUrls":["string"],"tags":[{"id":0,"name":"pet"}],"status":"pending"}
+
+14:30:59.270 response time in milliseconds: 374,64
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 21 Aug 2022 19:30:55 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"id":5,"category":{"id":25,"name":"DOG"},"name":"Rocc","photoUrls":["string"],"tags":[{"id":0,"name":"pet"}],"status":"pending"}
+
+ Server: Jetty(9.2.9.v20150224)
+1 < Transfer-Encoding: chunked
+{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"1.2365478963012547E22\""}
+
+"unknown","message":"java.lang.NumberFormatException: For input string: \"1.2365478963012547E22\""}
+
+ing: \"1.2365478963012547E22\""}
+
+
+1 < Transfer-Encoding: chunked
+{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"1.2365478963012547E22\""}
+
+ang.NumberFormatException: For input string: "1.2365478963012547E22"', expected: 'java.lang.NumberFormatException: For input string: "012365478963012547856321"', reason: not equal
+0150224)
+1 < Transfer-Encoding: chunked
+{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"1.2365478963012547E22\""}
+
+14:06:33.280 assertion failed: path: $.message, actual: 'java.lang.NumberFormatException: For input string: "1.2365478963012547E22"', expected: 'java.lang.NumberFormatException: For input string: "012365478963012547856321"', reason: not equal
