@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-public class FeaturesIntegration {
+public class AllFeaturesTest {
     public static void generateReport(String karateOutputPath) {
         Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[]{"json"}, true);
         List<String> jsonPaths = new ArrayList<>(jsonFiles.size());
@@ -29,3 +29,4 @@ public class FeaturesIntegration {
         Assertions.assertEquals(0,result.getFailCount());
     }
 }
+
