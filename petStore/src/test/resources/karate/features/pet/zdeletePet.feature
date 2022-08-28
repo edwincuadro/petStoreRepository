@@ -1,3 +1,4 @@
+@deletePet
 Feature: Delete pets
   As QA automation
   I want to delete a pet by ID
@@ -5,12 +6,17 @@ Feature: Delete pets
 
   Background: API service
     * url url
-
+  @deletePetHP
   Scenario: Delete a pet by correct ID
+    * def deleteResponse = read('classpath:karate/features/pet/deleteResponse.json')
     Given path 'pet', id
     When method DELETE
     Then status 200
+    And match response == deleteResponse
+    And assert response.message == message
 
+
+  @deletePetNegative
   Scenario Outline: Delete a pet with incorrect ID
     Given path 'pet', <id>
     When method DELETE

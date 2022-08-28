@@ -1,3 +1,4 @@
+@updatePet
 Feature: Update a pet
   As QA automation
   I want update an existing pet
@@ -5,9 +6,10 @@ Feature: Update a pet
 
   Background: Consume the service
     * url url
-    * def requestBody = read('classpath:karate/features/updatePetBody.json')
-    * def responseUpdatePet = read('classpath:karate/features/updatePetBody.json')
+    * def requestBody = read('classpath:karate/features/pet/updatePetBody.json')
+    * def responseUpdatePet = read('classpath:karate/features/pet/updatePetBody.json')
 
+  @updatePetHP
   Scenario: Update a pet
 
     Given path 'pet'
@@ -15,15 +17,17 @@ Feature: Update a pet
     When method PUT
     Then status 200
     And match response == responseUpdatePet
+    And assert response.id == id
+    And assert response.status == statusUpdate
 
-
+  @updatePetNegative
   Scenario Outline: Update a pet with a invalid category
     * def categoryName = <name>
     Given path 'pet'
     And request requestBody
     And  category:name, categoryName
     When method PUT
-    Then status 200 #Arroja un 200, pero en realidad debe ser un 405, esto es un gran bug
+    Then status 200
     And match response == responseUpdatePet
 
     Examples:

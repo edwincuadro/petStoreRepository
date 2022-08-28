@@ -1,5 +1,6 @@
 package karate;
 
+import com.intuit.karate.KarateOptions;
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
 import net.masterthought.cucumber.Configuration;
@@ -12,6 +13,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+
+
+@KarateOptions(tags = {"@addPet,@updatePet,@findPet,@createUser,@loginUser,@deletePet"})
 public class AllFeaturesTest {
     public static void generateReport(String karateOutputPath) {
         Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[]{"json"}, true);
@@ -21,6 +25,7 @@ public class AllFeaturesTest {
         ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
         reportBuilder.generateReports();
     }
+
     @Test
     public void testParallel(){
         String karateOutputPath = "target/surefire-reports";
