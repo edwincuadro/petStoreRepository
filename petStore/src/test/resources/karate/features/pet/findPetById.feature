@@ -1,3 +1,4 @@
+@findPet
 Feature: Find a pet by id
   As QA automation
   I want to find a pet by ID
@@ -5,16 +6,18 @@ Feature: Find a pet by id
 
   Background: API service
     * url url
-    * def responseAddPet = read('classpath:karate/features/AddPetBody.json')
+    * def responseAddPet = read('classpath:karate/features/pet/AddPetBody.json')
 
-
+  @findPetHP
   Scenario: Find a pet with correct ID
     Given path 'pet', id
     When method GET
     Then status 200
     And match response == responseAddPet
+    And assert response.id == id
+    And assert response.status == status
 
-
+  @findPetNegative
   Scenario Outline: Find a pet with incorrect ID
     Given path 'pet', <id>
     When method GET
