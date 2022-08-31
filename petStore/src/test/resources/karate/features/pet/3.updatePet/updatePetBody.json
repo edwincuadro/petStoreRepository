@@ -1,0 +1,18 @@
+{
+  "id": 5,
+  "category": {
+    "id": 25,
+    "name": "DOG"
+  },
+  "name": "Rocc",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "pet"
+    }
+  ],
+  "status": "sold"
+}
