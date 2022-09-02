@@ -7,9 +7,10 @@ Feature: Add a new pet
   Background: Consume the service
     * url url
     * def requestBody = read('classpath:karate/features/pet/1.addPet/addPetBody.json')
-    * def responseAddPet = read('karate/features/pet/1.addPet/addPetBody.json')
+    * def responseAddPet = read('karate/features/pet/1.addPet/addPetResponse.json')
+
   @addPetHappyPath
-  Scenario: Create a new pet with valid data
+  Scenario: Add a new pet with valid data
 
     Given path 'pet'
     And request requestBody
@@ -21,18 +22,19 @@ Feature: Add a new pet
 
   @addPetNegative
   Scenario Outline: Add a new pet with invalid status
-    * def statusAdd = '<status>'
     Given path 'pet'
     And request requestBody
-    And status, statusAdd
+    And id, '<id>'
+    And name, '<name>'
+    And status, '<status>'
     When method POST
     Then status 200
     * match response == responseAddPet
 
     Examples:
-      | status   |
-      | 123451   |
-      | &%#*$    |
-      | Arriving |
-      | "#null"  |
+      | status   | id      | name    |
+      | 123451   | 12300   | 000     |
+      | &%#*$    | &%#*$   | &%#*$   |
+      | Arriving | test    | N/A     |
+      | "#null"  | "#null" | "#null" |
 
